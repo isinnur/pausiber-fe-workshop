@@ -36,6 +36,12 @@ main {
 .logo-container {
     font-size: 36px;
     font-weight: 700;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.logo-container:hover{
+    color: #CE93D8;
 }
 
 .nav-container ul {
@@ -49,8 +55,92 @@ main {
     margin-right: 20px;
     text-transform: capitalize;
     color: #fff;
+    transition: 0.3s;
+}
+
+.nav-container ul .nav-link:hover{
+    color: #CE93D8;
 }
 
 .nav-container ul .nav-link:last-child {
     margin-right: 0px;
+}
+
+main {
+    height: calc(100% - 90px);
+    width: 100%;
+    padding: 75px 150px 75px 30px;
+    background-color: #CE93D8;
+}
+
+main .main-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+
+main .main-container .main-infos-content {
+    width: calc(100% - 500px);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+main .main-container .main-infos-content .text-content {
+    margin-bottom: 50px;
+    margin-top: -200px;
+
+}
+
+main .main-container .main-infos-content .text-content h2 {
+    margin-bottom: 12px;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+main .main-container .main-infos-content .text-content span {
+    color: #474a57;
+    font-size: 28px;
+    font-weight: 500;
+    letter-spacing: -1px;
+}
+
+main .main-container .main-infos-content .button-content {
+    display: flex;
+    gap: 20px;
+}
+
+main .main-container .main-infos-content .button-content button {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: black;
+    color: #fff;
+    font-weight: 700;
+    font-size: 25px;
+    cursor: pointer;
+    box-shadow: 4px 4px 0px 0px #BA68C8;
+    transition: .3s all ease-in-out;
+}
+
+main .main-container .main-infos-content .button-content button:hover{
+    box-shadow: -4px -4px -0px -0px 	#BA68C8;
+}
+
+main .main-container .main-image {
+    width: 500px;
+    height: 100%;
+}
+main .main-container .main-image img{
+    width: 500px;
+    height: 100%;
+    box-shadow: 6px 6px -0px -0px #BA68C8;
+    border-radius: 10px;
+    transition: 0.3s all ease-in-out;
+}
+
+main .main-container .main-image img:hover{
+    box-shadow: -6px -6px -0px -0px #BA68C8;
+border-radius: 12px;
 }
