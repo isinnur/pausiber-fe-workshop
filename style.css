@@ -40,7 +40,7 @@ main {
     cursor: pointer;
 }
 
-.logo-container:hover{
+.logo-container:hover {
     color: #CE93D8;
 }
 
@@ -55,11 +55,14 @@ main {
     margin-right: 20px;
     text-transform: capitalize;
     color: #fff;
+    border: none;
     transition: 0.3s;
 }
 
-.nav-container ul .nav-link:hover{
+.nav-container ul .nav-link:hover {
     color: #CE93D8;
+    border-bottom: 1px solid #BA68C8;
+
 }
 
 .nav-container ul .nav-link:last-child {
@@ -124,15 +127,18 @@ main .main-container .main-infos-content .button-content button {
     transition: .3s all ease-in-out;
 }
 
-main .main-container .main-infos-content .button-content button:hover{
-    box-shadow: -4px -4px -0px -0px 	#BA68C8;
+main .main-container .main-infos-content .button-content button:hover {
+    box-shadow: -4px -4px -0px -0px #BA68C8;
+    animation: shake .3s 2 linear;
+
 }
 
 main .main-container .main-image {
     width: 500px;
     height: 100%;
 }
-main .main-container .main-image img{
+
+main .main-container .main-image img {
     width: 500px;
     height: 100%;
     box-shadow: 6px 6px -0px -0px #BA68C8;
@@ -140,7 +146,73 @@ main .main-container .main-image img{
     transition: 0.3s all ease-in-out;
 }
 
-main .main-container .main-image img:hover{
+main .main-container .main-image img:hover {
     box-shadow: -6px -6px -0px -0px #BA68C8;
-border-radius: 12px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.social-container {
+    position: absolute;
+    right: 20px;
+    top: 40%;
+}
+
+.social-container a .social-item {
+    font-size: 30px;
+    background-color: #fff;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 9px;
+    transition: .3s all ease-in-out;
+    color: #AB47BC;
+}
+
+
+
+
+.social-container a .social-item.instagram:hover {
+    background-color: #e4405f;
+    color: white;
+}
+
+.social-container a .social-item.twitter:hover {
+    background-color: #1da1f2;
+    color: white;
+}
+
+.social-container a .social-item.github:hover {
+    background-color: #171515;
+    color: white;
+}
+
+.social-container a .social-item.linkedin:hover {
+    background-color: #0a66c2;
+    color: white;
+}
+
+@keyframes shake {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(10deg);
+    }
+
+    50% {
+        transform: rotate(0deg);
+    }
+
+    75%{
+        transform: rotate(-10deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
 }
