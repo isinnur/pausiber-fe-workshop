@@ -217,4 +217,28 @@ main .main-container .main-image img:hover {
     }
 }
 
+@media (max-width:1050px){
+    main{
+        height: auto;
+    }
+    main .main-container .button-content{
+        display: flex;
+    }
 
+    main .main-container .button-content button{
+        font-size: 16px;
+    }
+
+    .main-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .main-container .main-infos-content {
+        margin-top: 200px;
+    }
+    .main-container .main-image{
+        padding-top: 30px;
+    }
+
+
+}
