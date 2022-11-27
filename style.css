@@ -41,7 +41,11 @@ main {
 }
 
 /* .logo-container:hover { */
+<<<<<<< HEAD
 /* color: #CE93D8; */
+=======
+    /* color: #CE93D8; */
+>>>>>>> 9bccdd12aae9514983c6b8a37369797cf38b8a75
 /* } */
 
 .nav-container ul {
@@ -73,8 +77,13 @@ main {
     height: calc(100% - 90px);
     width: 100%;
     padding: 75px 150px 75px 30px;
+<<<<<<< HEAD
     background-color: #101010;
 
+=======
+    background-color:#101010; 
+   
+>>>>>>> 9bccdd12aae9514983c6b8a37369797cf38b8a75
 }
 
 
@@ -208,13 +217,18 @@ main .main-container .main-image img:hover {
         transform: rotate(0deg);
     }
 
+<<<<<<< HEAD
     75% {
+=======
+    75%{
+>>>>>>> 9bccdd12aae9514983c6b8a37369797cf38b8a75
         transform: rotate(-10deg);
     }
 
     100% {
         transform: rotate(0deg);
     }
+<<<<<<< HEAD
 }
 
 @media (max-width:1050px) {
@@ -284,3 +298,6 @@ main .main-container .main-image img:hover {
 
 
 
+=======
+}
+>>>>>>> 9bccdd12aae9514983c6b8a37369797cf38b8a75
